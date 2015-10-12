@@ -19,24 +19,19 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="44dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Hello!!"
+            android:text="Veuillez vous identifier !"
             android:id="@+id/textView"
-            android:layout_weight="0.50"
             android:height="100dp"
-            android:textSize="60dp" />
+            android:textSize="20dp" />
 
-        <FrameLayout
-            android:layout_width="100dp"
-            android:layout_height="400dp">
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="126dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/boutongo" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:layout_gravity="center_horizontal|bottom"
-                android:src="@drawable/bouton-go" />
-        </FrameLayout>
     </LinearLayout>
 </RelativeLayout>

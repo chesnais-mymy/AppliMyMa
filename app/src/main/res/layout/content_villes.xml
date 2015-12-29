@@ -8,6 +8,34 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_connexion"
-    tools:context="org.esiea.chesnais_ma.applimyma.villes">
+    tools:context="org.esiea.chesnais_ma.applimyma.villes"
+    android:background="@drawable/mer">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentLeft="true"
+        android:text="@string/select_city"
+        android:id="@+id/textView2"
+        android:layout_marginTop="34dp" />
+
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserver"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

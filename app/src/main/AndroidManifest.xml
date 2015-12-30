@@ -33,6 +33,9 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" >
         </activity>
+        <activity
+            android:name=".Inscription"
+            android:label="@string/title_inscription" >
+        </activity>
     </application>
-
-</manifest>
+    </manifest>

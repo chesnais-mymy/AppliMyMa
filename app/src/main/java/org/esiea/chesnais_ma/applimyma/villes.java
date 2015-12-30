@@ -30,7 +30,7 @@ public class villes extends AppCompatActivity {
         reserver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent i = new Intent(getApplicationContext(), Inscription.class);
                 startActivity(i);
 
             }

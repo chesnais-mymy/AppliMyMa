@@ -30,15 +30,16 @@
     <string name="select_transport">Choississez le moyen de transport voulu:</string>
 
     <string-array name="city_names">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Rabat</item>
+        <item>Paris</item>
+        <item>Strasbourg</item>
+        <item>Pekin</item>
+        <item>Venis</item>
+        <item>Barcelone</item>
+        <item>Marrakech</item>
+        <item>New York</item>
     </string-array>
+
     <string-array name="transport_names">
         <item>Train</item>
         <item>Bus</item>
@@ -48,6 +49,7 @@
         <item>Cheval</item>
         <item>Voiture</item>
     </string-array>
+
     <string-array name="environment_names">
         <item>Plaine</item>
         <item>Montagneux</item>

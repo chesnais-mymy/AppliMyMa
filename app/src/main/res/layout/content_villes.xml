@@ -15,10 +15,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reserver"
+        android:text="@string/button_reserver"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp" />
 
     <TableLayout
         android:layout_width="wrap_content"

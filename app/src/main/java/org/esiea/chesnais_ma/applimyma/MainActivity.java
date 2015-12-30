@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        Button suivant = (Button) findViewById(R.id.button);
+        Button next = (Button) findViewById(R.id.button);
 
-        suivant.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),villes.class);

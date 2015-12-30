@@ -30,12 +30,12 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:name=".Telechargement"
+            android:label="@string/title_activity_telechargement"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity
-            android:name=".Inscription"
-            android:label="@string/title_inscription" >
+        <activity android:name=".Inscription" >
         </activity>
     </application>
-    </manifest>
+
+</manifest>

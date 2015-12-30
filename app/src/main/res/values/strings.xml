@@ -10,6 +10,11 @@
     <string name="button_confirm">Confirm</string>
     <string name="pick_destination">Choose one place:</string>
     <string name="homepage">Don\'t waste your time, fly to paradise !</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="e_mail">E-mail Adress</string>
+    <string name="phone">Phone Number</string>
+   <string name="checkbox_response">Would you like an order confirmation?</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -59,4 +64,7 @@
         <item>Touristique</item>
         <item>Calme</item>
     </string-array>
+    <string name="title_activity_telechargement">Telechargement</string>
+    <string name="title_activity_inscription">Inscription</string>
+    <string name="button_reserver">Reserver</string>
 </resources>

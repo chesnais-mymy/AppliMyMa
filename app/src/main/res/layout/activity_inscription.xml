@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/mer">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="First Name"
-        android:ems="10"
-        android:id="@+id/editText" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mer">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Last Name"
-        android:ems="10"
-        android:id="@+id/editText2" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/first_name"
+                android:ems="10"
+                android:id="@+id/editText" />
 
-    <CheckedTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberPassword"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:text="Password" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/last_name"
+                android:ems="10"
+                android:id="@+id/editText2" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_confirm"
-        android:id="@+id/checkBox"
-        android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="@string/e_mail"
+                android:ems="10"
+                android:id="@+id/editText3" />
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:text="@string/phone"
+                android:ems="10"
+                android:id="@+id/editText4" />
+            <CheckBox
+                android:id="@+id/CheckBoxResponse"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_response"
+                android:layout_width="fill_parent">
+            </CheckBox>
 
-</LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_confirm"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal" /> 
+
+        </LinearLayout>
+

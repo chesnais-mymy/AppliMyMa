@@ -21,6 +21,8 @@
     <string name="title_activity_login">Sign in</string>
     <string name="title_item_list">Items</string>
     <string name="title_item_detail">Item Detail</string>
+    <string name="select_paysage">Choisissez le paysage souhaité:</string>
+    <string name="select_transport">Choississez le moyen de transport voulu:</string>
 
     <string-array name="city_names">
         <item>Mercury</item>
@@ -31,5 +33,23 @@
         <item>Saturn</item>
         <item>Uranus</item>
         <item>Neptune</item>
+    </string-array>
+    <string-array name="transport_names">
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Avion</item>
+        <item>Bateau</item>
+        <item>Montgolfière</item>
+        <item>Cheval</item>
+        <item>Voiture</item>
+    </string-array>
+    <string-array name="environment_names">
+        <item>Plaine</item>
+        <item>Montagneux</item>
+        <item>Désertique</item>
+        <item>Balnéaire</item>
+        <item>Rural</item>
+        <item>Touristique</item>
+        <item>Calme</item>
     </string-array>
 </resources>

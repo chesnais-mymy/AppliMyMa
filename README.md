@@ -14,5 +14,8 @@ Et lorsqu'on clique sur cette notification, vous êtes dirigé vers une nouvelle
 Ce button vous permettra de récupérer la liste de bierre qui vous seront proposé lors de votre trajet surréaliste.
 De même, une notification apparaîtra et il faudra cliquer sur la notification pour obtenir la liste des bières sur une nouvelle page (fichiers JSON).
 
+Et bien sûr l'application est traduite en anglais et en francais :) :). 
+
+
 
 

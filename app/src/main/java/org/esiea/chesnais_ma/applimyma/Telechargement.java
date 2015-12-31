@@ -58,7 +58,7 @@ public class Telechargement extends AppCompatActivity {
                 Intent myIntent = new Intent();
                 Context myContext = getApplicationContext();
 
-                myIntent.setClass(myContext, villes.class);
+                myIntent.setClass(myContext, recapitulatif.class);
                 myIntent.putExtra("ID", 1);
                 myPendingIntent = PendingIntent.getActivity(myContext, 0, myIntent, 0);
                 notification.setContentIntent(myPendingIntent);

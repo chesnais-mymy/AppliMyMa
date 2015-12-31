@@ -32,6 +32,7 @@ public class recapitulatif extends AppCompatActivity {
 
                 + "\n\n\n Comme vous êtes le tout premier client, vous obtenez le droit gratuit de" +
                         " réaliser ce voyage avec n'importe quel partenaire, à n'importe quel moment !"
+
         );
 
         NotificationManager notifmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);

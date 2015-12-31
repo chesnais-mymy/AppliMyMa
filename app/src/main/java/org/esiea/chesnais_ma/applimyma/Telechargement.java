@@ -48,15 +48,15 @@ public class Telechargement extends AppCompatActivity {
                 i.putExtra("phone_number", getIntent().getStringExtra("phone_number"));
                 startActivity(i);
 
-                Toast.makeText(getApplicationContext(), "Une notification s'est crée", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Notification appeared", Toast.LENGTH_SHORT).show();
 
                 NotificationCompat.Builder notification = new NotificationCompat.Builder(Telechargement.this);
 
                 notification.setSmallIcon(R.drawable.ic_launcher);
-                notification.setTicker("Téléchargement en cours!!");
+                notification.setTicker("Downloading file !");
                 notification.setWhen(System.currentTimeMillis());
-                notification.setContentTitle("Récapitulatif de commande");
-                notification.setContentText("Votre récapitulatif de commande est en cours de se télécharger");
+                notification.setContentTitle("Cart");
+                notification.setContentText("Your cart log is being loaded.");
 
                 Uri sound = RingtoneManager.getDefaultUri(Notification.DEFAULT_SOUND);
                 notification.setSound(sound);
@@ -99,7 +99,7 @@ public class Telechargement extends AppCompatActivity {
                 NotificationCompat.Builder notification = new NotificationCompat.Builder(Telechargement.this);
 
                 notification.setSmallIcon(R.drawable.ic_launcher);
-                notification.setTicker("Téléchargement en cours!!");
+                notification.setTicker("Téléchargement en cours !");
                 notification.setWhen(System.currentTimeMillis());
                 notification.setContentTitle("Téléchargement de la liste de bière");
                 notification.setContentText("La liste de bière proposé pour votre trajet");

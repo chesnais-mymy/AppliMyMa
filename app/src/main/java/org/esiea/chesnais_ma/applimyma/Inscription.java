@@ -74,40 +74,5 @@ public class Inscription extends AppCompatActivity {
         // Create the AlertDialog object and return it
         return builder.create();
     }
-    /*public Dialog onCreateDialog(int id) {
-        AlertDialog dialog = null;
-        if (id == 0) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
-            builder.setMessage(R.string.dialog_msg)
-                    .setTitle(R.string.dialog_title)
-                    .setItems(R.array.city_names, new DialogInterface.OnClickListener() {
-
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Toast.makeText(getApplication(), "You used the " + which + " item.", Toast.LENGTH_LONG).show();
-                        }
-                    });
-
-            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    // User clicked OK button
-                    Toast.makeText(getApplication(), "You confirmed", Toast.LENGTH_LONG).show();
-                }
-            });
-            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    // User cancelled the dialog
-                    Toast.makeText(getApplicationContext(), "You canceled your choice", Toast.LENGTH_LONG).show();
-                }
-            });
-
-            dialog = builder.create();
-        }
-        dialog.setContentView(R.layout.dialog);
-        return dialog;
-    }*/
-
-
-
 }
 

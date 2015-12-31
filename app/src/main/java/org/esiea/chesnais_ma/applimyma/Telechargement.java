@@ -73,8 +73,37 @@ public class Telechargement extends AppCompatActivity {
         jsonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent new_intent = new Intent(getApplicationContext(),SecondeActivity.class);
-                startActivity(new_intent);
+                Toast.makeText(getApplicationContext(), "Une notification s'est crée", Toast.LENGTH_SHORT).show();
+
+                NotificationCompat.Builder notification = new NotificationCompat.Builder(Telechargement.this);
+
+                notification.setSmallIcon(R.drawable.ic_launcher);
+                notification.setTicker("Téléchargement en cours!!");
+                notification.setWhen(System.currentTimeMillis());
+                notification.setContentTitle("Téléchargement de la liste de bière");
+                notification.setContentText("La liste de bière proposé pour votre trajet");
+
+                Uri sound = RingtoneManager.getDefaultUri(Notification.DEFAULT_SOUND);
+                notification.setSound(sound);
+
+                Bitmap picture = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+                notification.setLargeIcon(picture);
+
+                PendingIntent myPendingIntent;
+                Intent myIntent = new Intent();
+                Context myContext = getApplicationContext();
+
+                myIntent.setClass(myContext, SecondeActivity.class);
+                myIntent.putExtra("ID", 1);
+                myPendingIntent = PendingIntent.getActivity(myContext, 0, myIntent, 0);
+                notification.setContentIntent(myPendingIntent);
+
+                Notification notif = notification.build();
+                NotificationManager notifmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+                notifmanager.notify(1, notif);
+
+               /* Intent new_intent = new Intent(getApplicationContext(),SecondeActivity.class);
+                startActivity(new_intent);*/
             }
         });
 

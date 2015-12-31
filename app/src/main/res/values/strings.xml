@@ -77,6 +77,7 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="telecharger">Télécharger le récapitulatif de commande</string>
+    <string name="biere">Télécharger la liste de bière proposé durant votre trajet</string>
     <string name="Hello_world">Hello world !</string>
     <string name="msg">Insert your new date</string>
     <string name="notification_example">Notification !</string>
@@ -86,5 +87,5 @@
     <string name="menu_notification">Notification</string>
     <string name="change_date">Insert new date</string>
     <string name="date">Date</string>
-    <string name="recapitulatif">Review</string>
+    <string name="recapitulatif">Voici le récapitulatif de votre commande</string>
 </resources>

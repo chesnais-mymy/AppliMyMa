@@ -23,8 +23,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fichier JSON"
+        android:text="@string/biere"
         android:id="@+id/buttonjson"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_marginBottom="92dp" />
 </RelativeLayout>

@@ -74,6 +74,7 @@ public class SecondeActivity extends AppCompatActivity {
                 tv_hw.setText(getString(R.string.date) +":\t "+ dayOfMonth + "/" + (monthOfYear+1) + "/" + year);
             }
         }, yeaar, month-1, day);
+
         NotificationManager notifmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         int ID = getIntent().getIntExtra("ID", 8);
         notifmanager.cancel(ID);

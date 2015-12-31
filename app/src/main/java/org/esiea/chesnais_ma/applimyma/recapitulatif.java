@@ -1,5 +1,6 @@
 package org.esiea.chesnais_ma.applimyma;
 
+import android.app.NotificationManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,7 +24,12 @@ public class recapitulatif extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
+
         });
+
+        NotificationManager notifmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        int ID = getIntent().getIntExtra("ID", 8);
+        notifmanager.cancel(ID);
     }
 
 }

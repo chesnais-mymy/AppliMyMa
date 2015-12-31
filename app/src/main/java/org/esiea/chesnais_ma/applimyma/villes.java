@@ -99,9 +99,7 @@ public class villes extends AppCompatActivity {
             }
         });*/
 
-        NotificationManager notifmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        int ID = getIntent().getIntExtra("ID", 8);
-        notifmanager.cancel(ID);
+
     }
 
 }

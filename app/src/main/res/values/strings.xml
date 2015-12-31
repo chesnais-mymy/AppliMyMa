@@ -69,7 +69,7 @@
     <string name="title_activity_inscription">Inscription</string>
     <string name="button_reserver">Reserver</string>
     <string name="dialog_msg">Do you confirm your order for your next travel?</string>
-    <string name="dialog_title">Warning!!</string>
+    <string name="dialog_title">Warning!!!</string>
     <string name="ok">Confirm</string>
     <string name="cancel">Cancel</string>
 </resources>

@@ -89,4 +89,11 @@
     <string name="date">Date</string>
     <string name="recapitulatif">Voici le récapitulatif de votre commande</string>
     <string name="title_activity_recapitulatif">Recapitulatif</string>
+    <string name="spain">You chose Spain.</string>
+    <string name="morocco">You chose Morocco.</string>
+    <string name="china">You chose China.</string>
+    <string name="tunisia">You chose Tunisia.</string>
+    <string name="south_africa">You chose South Africa.</string>
+    <string name="portugal">You choose Portugal.</string>
+
 </resources>

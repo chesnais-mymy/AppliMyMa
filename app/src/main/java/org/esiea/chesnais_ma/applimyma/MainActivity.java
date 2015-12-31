@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi l'Espagne ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"@string/spain", Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Spain";
             }
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi le Maroc ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"@string/morocco", Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Morocco";
             }
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi la Tunisie ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"@string/tunisia", Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Tunis";
             }
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi la Chine ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"@string/china", Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "China";
             }
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Vous avez choisi l'Afrique du Sud ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "@string/south_africa", Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "South Africa";
             }
 
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Vous avez choisi le Portugal ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "@string/portugal", Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Portugal";
             }
 

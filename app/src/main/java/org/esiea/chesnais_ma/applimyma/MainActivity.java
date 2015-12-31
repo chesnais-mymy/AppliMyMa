@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,10 +25,64 @@ public class MainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),villes.class);
+                Intent i = new Intent(getApplicationContext(), villes.class);
                 startActivity(i);
 
             }
+        });
+
+        Button button = (Button) findViewById(R.id.imageButton);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Vous avez choisi l'espagne ", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
+        Button button2 = (Button) findViewById(R.id.imageButton2);
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Vous avez choisi le maroc ", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
+        Button button3 = (Button) findViewById(R.id.imageButton3);
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Vous avez choisi la Tunisie ", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
+        Button button4 = (Button) findViewById(R.id.imageButton4);
+        button4.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Vous avez choisi la Chine ", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
+        Button button5 = (Button) findViewById(R.id.imageButton5);
+        button5.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Vous avez choisi l'Afrique du Sud ", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
+        Button button6 = (Button) findViewById(R.id.imageButton6);
+        button6.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"Vous avez choisi le Portugal ", Toast.LENGTH_SHORT).show();
+            }
+
         });
 
     }

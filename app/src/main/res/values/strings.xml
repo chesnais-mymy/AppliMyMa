@@ -1,4 +1,4 @@
-<resources>
+<resources>>
     <string name="app_name">AppliMyMa</string>
     <string name="action_settings">Settings</string>
     <string name="Hello">Hello !!</string>
@@ -14,7 +14,7 @@
     <string name="last_name">Last Name</string>
     <string name="e_mail">E-mail Adress</string>
     <string name="phone">Phone Number</string>
-   <string name="checkbox_response">Would you like an order confirmation?</string>
+   <string name="checkbox_response">Would you like an SMS's order confirmation?</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -63,12 +63,13 @@
         <item>Rural</item>
         <item>Touristique</item>
         <item>Calme</item>
+
     </string-array>
     <string name="title_activity_telechargement">Telechargement</string>
     <string name="title_activity_inscription">Inscription</string>
     <string name="button_reserver">Reserver</string>
-    <string name="dialog_msg">Message by Dialog</string>
-    <string name="dialog_title">Dialog Title</string>
+    <string name="dialog_msg">Do you confirm your order for your next travel?</string>
+    <string name="dialog_title">Warning!!</string>
     <string name="ok">Confirm</string>
     <string name="cancel">Cancel</string>
 </resources>

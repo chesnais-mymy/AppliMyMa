@@ -15,9 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/recapitulatif"
         android:id="@+id/textView5"
+        android:layout_marginTop="76dp"
         android:layout_alignParentTop="true"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
-
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

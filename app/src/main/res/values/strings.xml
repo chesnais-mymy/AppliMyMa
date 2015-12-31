@@ -14,7 +14,7 @@
     <string name="last_name">Last Name</string>
     <string name="e_mail">E-mail Adress</string>
     <string name="phone">Phone Number</string>
-   <string name="checkbox_response">Would you like an SMS's order confirmation?</string>
+   <string name="checkbox_response">Would you like an SMS order confirmation?</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

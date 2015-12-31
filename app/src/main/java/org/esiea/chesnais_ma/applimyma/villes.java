@@ -19,6 +19,7 @@ public class villes extends AppCompatActivity {
 
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
+    Object ville = null,transport = null,environment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +27,18 @@ public class villes extends AppCompatActivity {
         setContentView(R.layout.activity_villes);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //Toast.makeText(getApplicationContext(),getIntent().getStringExtra("country"),Toast.LENGTH_LONG).show();
         Button reserver = (Button) findViewById(R.id.button2);
 
         reserver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), Inscription.class);
+                i.putExtra("country",getIntent().getStringExtra("country"));
+                i.putExtra("ville",ville.toString());
+                i.putExtra("transport",transport.toString());
+                i.putExtra("environment",environment.toString());
+                //Toast.makeText(getApplicationContext(),"Result " + ville + transport + environment + " end test",Toast.LENGTH_LONG).show();
                 startActivity(i);
 
             }
@@ -46,7 +52,7 @@ public class villes extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_SHORT).show();
-                Object ville = parent.getItemAtPosition(position);
+                ville = parent.getItemAtPosition(position);
 
             }
 
@@ -63,7 +69,7 @@ public class villes extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_SHORT).show();
-                Object transport = parent.getItemAtPosition(position);
+                transport = parent.getItemAtPosition(position);
 
             }
 
@@ -80,7 +86,7 @@ public class villes extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_SHORT).show();
-                Object environment = parent.getItemAtPosition(position);
+                environment = parent.getItemAtPosition(position);
             }
 
             @Override

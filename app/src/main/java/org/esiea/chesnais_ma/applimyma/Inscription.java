@@ -23,6 +23,9 @@ public class Inscription extends AppCompatActivity {
         setSupportActionBar(toolbar);*/
         Button confirm = (Button) findViewById(R.id.button3);
 
+        /* test
+        Toast.makeText(getApplicationContext(),"test = "+getIntent().getStringExtra("country")+getIntent().getStringExtra("ville")+getIntent().getStringExtra("transport")+getIntent().getStringExtra("environment"),Toast.LENGTH_LONG).show();
+        */
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,15 +33,24 @@ public class Inscription extends AppCompatActivity {
 //             showDialog(0);
                 // else {
                 EditText text = (EditText) findViewById(R.id.editText);
-                Editable first_name =text.getText();
+                Editable first_name = text.getText();
                 EditText text2 = (EditText) findViewById(R.id.editText2);
-                Editable last_name =text2.getText();
+                Editable last_name = text2.getText();
                 EditText text3 = (EditText) findViewById(R.id.editText3);
-                Editable email =text3.getText();
+                Editable email = text3.getText();
                 EditText text4 = (EditText) findViewById(R.id.editText4);
-                Editable phone =text4.getText();
+                Editable phone = text4.getText();
                 //Toast.makeText(getApplicationContext(),first_name,Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(), Telechargement.class);
+                i.putExtra("country", getIntent().getStringExtra("country"));
+                i.putExtra("ville", getIntent().getStringExtra("ville"));
+                i.putExtra("transport",getIntent().getStringExtra("transport"));
+                i.putExtra("environment", getIntent().getStringExtra("environment"));
+
+                i.putExtra("first_name",first_name.toString());
+                i.putExtra("last_name",last_name.toString());
+                i.putExtra("email_address",email.toString());
+                i.putExtra("phone_number",phone.toString());
                 startActivity(i);
                 //     }
 

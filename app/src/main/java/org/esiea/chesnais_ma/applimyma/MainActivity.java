@@ -19,7 +19,7 @@ import android.widget.ImageButton;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-
+    String lastSelectedCountry = "Sea";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), villes.class);
+                i.putExtra("country",lastSelectedCountry);
                 startActivity(i);
 
             }
@@ -44,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi l'espagne ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Vous avez choisi l'Espagne ", Toast.LENGTH_SHORT).show();
+                lastSelectedCountry = "Spain";
             }
 
         });
@@ -53,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi le maroc ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Vous avez choisi le Maroc ", Toast.LENGTH_SHORT).show();
+                lastSelectedCountry = "Morocco";
             }
 
         });
@@ -63,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Vous avez choisi la Tunisie ", Toast.LENGTH_SHORT).show();
+                lastSelectedCountry = "Tunis";
             }
 
         });
@@ -72,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Vous avez choisi la Chine ", Toast.LENGTH_SHORT).show();
+                lastSelectedCountry = "China";
             }
 
         });
@@ -81,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Vous avez choisi l'Afrique du Sud ", Toast.LENGTH_SHORT).show();
+                lastSelectedCountry = "South Africa";
             }
 
         });
@@ -90,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Vous avez choisi le Portugal ", Toast.LENGTH_SHORT).show();
+                lastSelectedCountry = "Portugal";
             }
 
         });

@@ -35,5 +35,5 @@
     <string name="title_activity_preference_activity">Choix sauvegardés</string>
     <string name="title_activity_telechargement">Télécharger</string>
     <string name="title_inscription">Inscription</string>
-    <string name="spain">Vous avez choisi l'Espagne.</string>
+    <string name="spain">Vous avez choisi l\'Espagne.</string>
 </resources>

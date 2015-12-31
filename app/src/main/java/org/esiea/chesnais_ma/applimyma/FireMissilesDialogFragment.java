@@ -15,17 +15,17 @@ public class FireMissilesDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder
+            builder.setMessage(R.string.dialog_msg)
                     .setTitle(R.string.dialog_title)
-                    .setItems(R.array.city_names, new DialogInterface.OnClickListener() {
+                    /*.setItems(R.array.city_names, new DialogInterface.OnClickListener() {
 
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             Toast.makeText(getActivity(), "You used the " + which + " item.", Toast.LENGTH_LONG).show();
                         }
-                    });
+                    })*/;
 
-            /*builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     // User clicked OK button
                     Toast.makeText(getActivity(), "You confirmed", Toast.LENGTH_LONG).show();
@@ -36,7 +36,7 @@ public class FireMissilesDialogFragment extends DialogFragment {
                     // User cancelled the dialog
                     Toast.makeText(getActivity(), "You canceled your choice", Toast.LENGTH_LONG).show();
                 }
-            });*/
+            });
         /*AlertDialog dialog = builder.create();
         dialog.setContentView(R.layout.dialog);*/
         return  builder.create();

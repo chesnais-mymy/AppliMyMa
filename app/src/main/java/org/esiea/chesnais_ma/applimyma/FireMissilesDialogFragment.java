@@ -12,26 +12,10 @@ import android.widget.Toast;
  */
 public class FireMissilesDialogFragment extends DialogFragment {
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {/*
-        // Use the Builder class for convenient dialog construction
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setMessage("Lancer")
-                .setPositiveButton("FEU", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // FIRE ZE MISSILES!
-                    }
-                })
-                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // User cancelled the dialog
-                    }
-                });
-        // Create the AlertDialog object and return it
-        return builder.create();*/
-
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setMessage(R.string.dialog_msg)
+            builder
                     .setTitle(R.string.dialog_title)
                     .setItems(R.array.city_names, new DialogInterface.OnClickListener() {
 
@@ -41,7 +25,7 @@ public class FireMissilesDialogFragment extends DialogFragment {
                         }
                     });
 
-            builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            /*builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                     // User clicked OK button
                     Toast.makeText(getActivity(), "You confirmed", Toast.LENGTH_LONG).show();
@@ -52,7 +36,9 @@ public class FireMissilesDialogFragment extends DialogFragment {
                     // User cancelled the dialog
                     Toast.makeText(getActivity(), "You canceled your choice", Toast.LENGTH_LONG).show();
                 }
-            });
+            });*/
+        /*AlertDialog dialog = builder.create();
+        dialog.setContentView(R.layout.dialog);*/
         return  builder.create();
     }
 }

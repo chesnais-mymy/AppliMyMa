@@ -19,7 +19,7 @@ public class Telechargement extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         new FireMissilesDialogFragment().show(getFragmentManager(),"hmm");
-        }
+    }
 
     /*public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction

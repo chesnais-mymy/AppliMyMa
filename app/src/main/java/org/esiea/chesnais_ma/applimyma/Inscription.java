@@ -27,6 +27,7 @@ public class Inscription extends AppCompatActivity {
                // if (true)
 //                showDialog(0);
                // else {
+
                     Intent i = new Intent(getApplicationContext(), Telechargement.class);
                     startActivity(i);
            //     }

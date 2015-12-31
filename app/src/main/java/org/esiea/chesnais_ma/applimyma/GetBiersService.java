@@ -47,9 +47,6 @@ public class GetBiersService extends IntentService {
         }
     }
 
-    private void handleActionGetAllBiers() {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
     private void copyInputStreamToFile(InputStream in, File file) {
         try {
             OutputStream out = new FileOutputStream(file);
@@ -64,7 +61,7 @@ public class GetBiersService extends IntentService {
         }
     }
 
-    private void handleActionGet_All_Biers() {
+    private void handleActionGetAllBiers() {
 
         Log.d("GetBiersServices", "Thread service name:" + Thread.currentThread().getName());
         URL url = null;

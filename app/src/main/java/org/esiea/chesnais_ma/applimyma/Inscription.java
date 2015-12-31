@@ -24,12 +24,12 @@ public class Inscription extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (true)
-                showDialog(0);
-                else {
+               // if (true)
+//                showDialog(0);
+               // else {
                     Intent i = new Intent(getApplicationContext(), Telechargement.class);
                     startActivity(i);
-                }
+           //     }
 
             }
         });}

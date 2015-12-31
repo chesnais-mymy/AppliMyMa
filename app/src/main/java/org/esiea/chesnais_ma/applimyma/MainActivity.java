@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button = (Button) findViewById(R.id.imageButton);
+        ImageButton button = (ImageButton) findViewById(R.id.imageButton);
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button button2 = (Button) findViewById(R.id.imageButton2);
+        ImageButton button2 = (ImageButton) findViewById(R.id.imageButton2);
         button2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button button3 = (Button) findViewById(R.id.imageButton3);
+        ImageButton button3 = (ImageButton) findViewById(R.id.imageButton3);
         button3.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button button4 = (Button) findViewById(R.id.imageButton4);
+        ImageButton button4 = (ImageButton) findViewById(R.id.imageButton4);
         button4.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -67,16 +68,16 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button button5 = (Button) findViewById(R.id.imageButton5);
+        ImageButton button5 = (ImageButton) findViewById(R.id.imageButton5);
         button5.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi l'Afrique du Sud ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Vous avez choisi l'Afrique du Sud ", Toast.LENGTH_SHORT).show();
             }
 
         });
 
-        Button button6 = (Button) findViewById(R.id.imageButton6);
+        ImageButton button6 = (ImageButton) findViewById(R.id.imageButton6);
         button6.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {

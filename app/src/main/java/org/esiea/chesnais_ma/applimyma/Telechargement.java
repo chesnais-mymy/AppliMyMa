@@ -20,6 +20,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Telechargement extends AppCompatActivity {
 
@@ -37,6 +38,8 @@ public class Telechargement extends AppCompatActivity {
         telecharger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Une notification s'est crée", Toast.LENGTH_SHORT).show();
+
                 NotificationCompat.Builder notification = new NotificationCompat.Builder(Telechargement.this);
 
                 notification.setSmallIcon(R.drawable.ic_launcher);
@@ -55,7 +58,7 @@ public class Telechargement extends AppCompatActivity {
                 Intent myIntent = new Intent();
                 Context myContext = getApplicationContext();
 
-                myIntent.setClass(myContext, villes.class);
+                myIntent.setClass(myContext, recapitulatif.class);
                 myIntent.putExtra("ID", 1);
                 myPendingIntent = PendingIntent.getActivity(myContext, 0, myIntent, 0);
                 notification.setContentIntent(myPendingIntent);

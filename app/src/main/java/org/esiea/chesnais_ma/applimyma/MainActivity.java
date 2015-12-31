@@ -1,21 +1,29 @@
 package org.esiea.chesnais_ma.applimyma;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.ImageButton;
+
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -81,11 +89,34 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Vous avez choisi le Portugal ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Vous avez choisi le Portugal ", Toast.LENGTH_SHORT).show();
             }
 
         });
 
+        // shared prefs
+        /*ed1=(EditText)findViewById(R.id.editText);
+        ed2=(EditText)findViewById(R.id.editText2);
+        ed3=(EditText)findViewById(R.id.editText3);
+        b1=(Button)findViewById(R.id.button);
+        sharedPrefs = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String n  = ed1.getText().toString();
+                String ph  = ed2.getText().toString();
+                String e  = ed3.getText().toString();
+
+                SharedPreferences.Editor editor = sharedPrefs.edit();
+
+                editor.putString(Name, n);
+                editor.putString(Phone, ph);
+                editor.putString(Email, e);
+                editor.commit();
+                Toast.makeText(MainActivity.this,"Thanks",Toast.LENGTH_LONG).show();
+            }
+        });*/
 
     }
 
@@ -105,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             return true;
         }
 

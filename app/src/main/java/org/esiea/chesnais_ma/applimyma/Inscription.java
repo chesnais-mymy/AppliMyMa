@@ -6,8 +6,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -24,13 +26,21 @@ public class Inscription extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // if (true)
-//                showDialog(0);
-               // else {
-
-                    Intent i = new Intent(getApplicationContext(), Telechargement.class);
-                    startActivity(i);
-           //     }
+                // if (true)
+//             showDialog(0);
+                // else {
+                EditText text = (EditText) findViewById(R.id.editText);
+                Editable first_name =text.getText();
+                EditText text2 = (EditText) findViewById(R.id.editText2);
+                Editable last_name =text2.getText();
+                EditText text3 = (EditText) findViewById(R.id.editText3);
+                Editable email =text3.getText();
+                EditText text4 = (EditText) findViewById(R.id.editText4);
+                Editable phone =text4.getText();
+                //Toast.makeText(getApplicationContext(),first_name,Toast.LENGTH_LONG).show();
+                Intent i = new Intent(getApplicationContext(), Telechargement.class);
+                startActivity(i);
+                //     }
 
             }
         });}

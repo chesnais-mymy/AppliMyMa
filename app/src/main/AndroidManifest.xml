@@ -36,6 +36,10 @@
         </activity>
         <activity android:name=".Inscription" >
         </activity>
+        <activity
+            android:name=".testing.PreferenceActivity"
+            android:label="@string/title_activity_preference_activity" >
+        </activity>
     </application>
 
 </manifest>

@@ -44,6 +44,8 @@ public class villes extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_SHORT).show();
+                Object ville = parent.getItemAtPosition(position);
+
             }
 
             @Override
@@ -59,6 +61,8 @@ public class villes extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_SHORT).show();
+                Object transport = parent.getItemAtPosition(position);
+
             }
 
             @Override
@@ -74,6 +78,7 @@ public class villes extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " is selected", Toast.LENGTH_SHORT).show();
+                Object environment = parent.getItemAtPosition(position);
             }
 
             @Override

@@ -1,5 +1,6 @@
 package org.esiea.chesnais_ma.applimyma;
 
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -97,6 +98,10 @@ public class villes extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+
+        NotificationManager notifmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        int ID = getIntent().getIntExtra("ID", 8);
+        notifmanager.cancel(ID);
     }
 
 }

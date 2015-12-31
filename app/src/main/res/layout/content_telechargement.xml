@@ -11,4 +11,12 @@
     tools:context="org.esiea.chesnais_ma.applimyma.Telechargement"
     android:background="@drawable/mer">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telecharger"
+        android:id="@+id/button4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp" />
 </RelativeLayout>

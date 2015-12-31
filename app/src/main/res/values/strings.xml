@@ -67,4 +67,8 @@
     <string name="title_activity_telechargement">Telechargement</string>
     <string name="title_activity_inscription">Inscription</string>
     <string name="button_reserver">Reserver</string>
+    <string name="dialog_msg">Message by Dialog</string>
+    <string name="dialog_title">Dialog Title</string>
+    <string name="ok">Confirm</string>
+    <string name="cancel">Cancel</string>
 </resources>

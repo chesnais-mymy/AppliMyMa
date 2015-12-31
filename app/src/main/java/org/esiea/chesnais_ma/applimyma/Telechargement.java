@@ -29,7 +29,7 @@ public class Telechargement extends AppCompatActivity {
         setContentView(R.layout.activity_telechargement);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        new FireMissilesDialogFragment().show(getFragmentManager(),"hmm");
+        new FireMissilesDialogFragment().show(getFragmentManager(), "hmm");
 
 
         Button telecharger = (Button) findViewById(R.id.button4);
@@ -66,6 +66,14 @@ public class Telechargement extends AppCompatActivity {
             }
         });
 
+        Button jsonButton = (Button) findViewById(R.id.buttonjson);
+        jsonButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent new_intent = new Intent(getApplicationContext(),SecondeActivity.class);
+                startActivity(new_intent);
+            }
+        });
 
     }
 

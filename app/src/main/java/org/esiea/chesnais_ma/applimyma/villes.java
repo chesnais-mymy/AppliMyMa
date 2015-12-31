@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -103,5 +104,9 @@ public class villes extends AppCompatActivity {
         int ID = getIntent().getIntExtra("ID", 8);
         notifmanager.cancel(ID);
     }
+    public boolean onCreateOptionsMenu(Menu menu) {
 
+        getMenuInflater().inflate(R.menu.menu_villes, menu);
+        return true;
+    }
 }

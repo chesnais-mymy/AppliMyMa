@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), villes.class);
-                i.putExtra("country",lastSelectedCountry);
+                i.putExtra("country", lastSelectedCountry);
                 startActivity(i);
 
             }
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"@string/spain", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.spain, Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Spain";
             }
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"@string/morocco", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.morocco, Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Morocco";
             }
 
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"@string/tunisia", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.tunisia, Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Tunis";
             }
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"@string/china", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.china, Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "China";
             }
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "@string/south_africa", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.south_africa, Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "South Africa";
             }
 
@@ -95,35 +95,12 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "@string/portugal", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.portugal, Toast.LENGTH_SHORT).show();
                 lastSelectedCountry = "Portugal";
             }
 
         });
 
-        // shared prefs
-        /*ed1=(EditText)findViewById(R.id.editText);
-        ed2=(EditText)findViewById(R.id.editText2);
-        ed3=(EditText)findViewById(R.id.editText3);
-        b1=(Button)findViewById(R.id.button);
-        sharedPrefs = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String n  = ed1.getText().toString();
-                String ph  = ed2.getText().toString();
-                String e  = ed3.getText().toString();
-
-                SharedPreferences.Editor editor = sharedPrefs.edit();
-
-                editor.putString(Name, n);
-                editor.putString(Phone, ph);
-                editor.putString(Email, e);
-                editor.commit();
-                Toast.makeText(MainActivity.this,"Thanks",Toast.LENGTH_LONG).show();
-            }
-        });*/
 
     }
 

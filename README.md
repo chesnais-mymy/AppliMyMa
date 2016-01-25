@@ -18,5 +18,7 @@ Vous avez aussi à disposition une Action Bar, qui vous permet d'acceder à la l
 Et bien sûr l'application est traduite en anglais et en francais :) :). 
 
 
+Notation finale : 18/20 par Jean-François LALANDE
+
 
 

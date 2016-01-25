@@ -1,5 +1,7 @@
 # AppliMyMa
 
+Consignes : http://inf4042.fabrigli.fr/
+
 Notre application vous permet de choisir une destination irréelle pour vos vacances. En effet sur la première page de l'application vous
 pouvez choisir votre pays de destination en cliquand sur les drapeaux, un toast apparait en fonction de votre choix.
 Sur la deuxieme page, vous avez 3 spinners qui vous permettent de choisir votre ville, votre paysage, et votre mode de transport.
